@@ -47,7 +47,9 @@ matrix:
 
 before_install: sudo .ci/travis-before-install.sh
 
-install: .ci/travis-install.sh
+install: 
+  - pip install docker-compose
+  - .ci/travis-install.sh
 
 before_script: .ci/travis-before-script.sh
 
