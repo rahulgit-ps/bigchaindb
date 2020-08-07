@@ -21,10 +21,10 @@ RUN apk --update add sudo bash \
 RUN apk --update add mongodb monit
 
 # Install Tendermint
-RUN wget https://github.com/tendermint/tendermint/releases/download/${TM_VERSION}/tendermint_${TM_VERSION}_linux_amd64.zip \
-    && unzip tendermint_${TM_VERSION}_linux_amd64.zip \
+RUN wget https://121-285271017-gh.circle-artifacts.com/3/tendermint_v0.0.0_linux_arm64.zip \
+    && unzip tendermint_v0.0.0_linux_arm64.zip \
     && mv tendermint /usr/local/bin/ \
-    && rm tendermint_${TM_VERSION}_linux_amd64.zip
+    && rm tendermint_v0.0.0_linux_arm64.zip
 
 ENV TMHOME=/tendermint
 
