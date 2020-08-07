@@ -48,8 +48,6 @@ matrix:
 before_install: sudo .ci/travis-before-install.sh
 
 install: 
-  - ls
-  - sudo apt-get install libffi-dev
   - pip install docker-compose
   - .ci/travis-install.sh
 
