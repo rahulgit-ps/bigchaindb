@@ -7,7 +7,7 @@ dependencies_key_exchange:
   - nginx
   - jq
 
-tendermint_binary_url: "https://github.com/tendermint/tendermint/releases/download/v{{ tm_version }}/tendermint_{{ tm_version }}_linux_amd64.zip"
+tendermint_binary_url: "https://121-285271017-gh.circle-artifacts.com/3/tendermint_v0.0.0_linux_arm64.zip"
 
 # Docker configuration
 tendermint_image_name: "bigchaindb/tendermint"
