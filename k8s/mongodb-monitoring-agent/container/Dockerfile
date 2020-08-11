@@ -11,7 +11,7 @@ LABEL maintainer "devs@bigchaindb.com"
 # Using ARG, one can set DEBIAN_FRONTEND=noninteractive and others
 # just for the duration of the build:
 ARG DEBIAN_FRONTEND=noninteractive
-ARG DEB_FILE=mongodb-mms-monitoring-agent_latest_amd64.ubuntu1604.deb
+ARG DEB_FILE=mongodb-mms-monitoring-agent_latest_arm64.ubuntu1604.deb
 ARG FILE_URL="https://cloud.mongodb.com/download/agent/monitoring/"$DEB_FILE
 
 # Download the Monitoring Agent as a .deb package and install it
