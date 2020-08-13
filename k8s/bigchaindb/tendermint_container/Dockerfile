@@ -1,4 +1,4 @@
-FROM tendermint/tendermint:v0.31.5
+FROM pshub/customized_tendermint_arm64:v0.31.5
 LABEL maintainer "devs@bigchaindb.com"
 WORKDIR /
 USER root
