@@ -63,8 +63,7 @@ services:
   bdb:
     image: busybox
     depends_on:
-      bigchaindb:
-        condition: service_healthy
+      bigchaindb
 
 
   # curl client to check the health of development env
