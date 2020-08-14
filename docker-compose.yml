@@ -47,7 +47,7 @@ services:
       test: ["CMD", "bash", "-c", "curl http://bigchaindb:9984 && curl http://tendermint:26657/abci_query"]
       interval: 5s
       timeout: 60s
-      retries: 7
+      retries: 30
     command: '.ci/entrypoint.sh'
     restart: always
   tendermint:
